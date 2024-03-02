@@ -1,14 +1,16 @@
 package com.bway.SpringCoreDemo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.bway.SpringCoreDemo.model.User;
 
-public interface userRepository extends JpaRepository<User, Integer> {
+@Repository
+public interface UserRepository extends JpaRepository<User, Integer> {
 	
 	
 	
 	
-	User findByUsernameAndPassword(String un, String psw);
+	User findByUsernameAndPassword(String username, String password);
 
 }

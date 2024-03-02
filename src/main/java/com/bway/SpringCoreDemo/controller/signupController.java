@@ -28,8 +28,8 @@ public class signupController {
 //		model.addAttribute("password",u.getPassword());
 		
 		
-		model.addAttribute("user",user);   //shorthand step for above metioned steps
-		userRepo.save("user");
+		model.addAttribute("user",u);   //shorthand step for above metioned steps
+		u.save("user");
 		return "loginForm";
 		
 	}
