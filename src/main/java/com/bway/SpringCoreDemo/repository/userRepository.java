@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.bway.SpringCoreDemo.model.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Integer> {
+public interface userRepository extends JpaRepository<User, Integer> {
     User findByUsernameAndPassword(String username, String password);
 }

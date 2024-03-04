@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.bway.SpringCoreDemo.model.User;
-import com.bway.SpringCoreDemo.repository.UserRepository;
+import com.bway.SpringCoreDemo.repository.userRepository;
 @Controller
 public class signupController {
 	@Autowired
-	private UserRepository userRepo;
+	private userRepository userRepo;
 	@GetMapping("/signup")
 	public String signup() {
 		return "signUp";
