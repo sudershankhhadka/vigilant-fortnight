@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.bway.SpringCoreDemo.model.User;
-import com.bway.SpringCoreDemo.repository.userRepository;
+import com.bway.SpringCoreDemo.repository.UserRepository;
 @Controller
 public class loginController {
 	
 	
 	
 	@Autowired
-	private userRepository userRepo;
+	private UserRepository  userRepo;
 	
 	
 	@GetMapping("/login")
